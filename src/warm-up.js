@@ -13,36 +13,48 @@
 // var type = "Dessert";
 // var inStock = 10
 
+var food = "Watermelon";
+var type = "Fruit";
+var inStock = 50;
 
 
-// Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make 
+
+// Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
+inStock = inStock * 2;
 
 
-// Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack! 
+// Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack!
 // Use a built in math operator to decrement the inStock count by 1.
-
+inStock = inStock - 1;
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
-
+var isFavorite = false;
 
 
 // Create a new variable named "shouldOrderMore", and use a comparison operator to
 // assign a boolean value to this variable. If "inStock" is less than 20, the
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
-
+var shouldOrderMore = inStock < 20
 
 
 //------------------------- Conditionals -------------------------//
 
-
+//I think the "stockCount" is meant to be inStock so I am going to set stockCount
+//to equal inStock
 
 // Express the following in code: If the variable "stockCount" is greater or equal to 1, log
-// the statement 'I'm going to eat some [food]!', otherwise, log the statement 
+// the statement 'I'm going to eat some [food]!', otherwise, log the statement
 // 'We need to get some more [food].'
+var stockCount = inStock
 
+if(stockCount >= 1){
+  console.log(`I'm going to eat some ${food}`);
+} else {
+  console.log(`We need to get some more ${food}`);
+}
 
 
 // Express the following in code: If the variable "isFavorite" is true,
