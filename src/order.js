@@ -11,9 +11,25 @@ function refundOrder(orderToRefund, arr) {
 }
 
 
-function listItems() {
+function listItems(arr) {
+  var names = [];
+  for(var i = 0; i < arr.length; i++){
+    names.push(arr[i].item);
+  }
+  return names.join(", ");
+  }
 
+
+function searchOrder(arr, name) {
+  for(var i = 0; i < arr.length; i++ ) {
+    if(arr[i].item === name){
+      return true;
+    }
+  }
+  return false;
 }
+
+
 
 
 
@@ -22,5 +38,5 @@ module.exports = {
   takeOrder,
   refundOrder,
   listItems,
-  // searchOrder
+  searchOrder
 }
